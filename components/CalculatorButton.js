@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 export default class CalculatorButton extends Component {
   static defaultProps = {
     onPress: function () {},
     title: "",
-    color: "#fff",
     backgroundColor: "#000",
     radius: 40,
     style: {},
