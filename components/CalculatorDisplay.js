@@ -16,5 +16,5 @@ export default class CalculatorDisplay extends Component {
 
 const styles = StyleSheet.create({
   container: { padding: 20 },
-  display: { fontSize: 100, color: "#abafd1", textAlign: "right" },
+  display: { fontSize: 100, color: "#d4d4d2", textAlign: "right" },
 });

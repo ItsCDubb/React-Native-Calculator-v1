@@ -76,15 +76,19 @@ export default class CalculatorScreen extends Component {
     return (
       <View style={styles.container}>
         <View
-          style={{ flex: 1, justifyContent: "flex-end" }}
+          style={{
+            flex: 1,
+            justifyContent: "flex-end",
+            alignItems: "flex-end",
+          }}
           {...this.panResponder.panHandlers}
         >
           <CalcDisplay display={this.state.display} />
         </View>
         <View
           style={{
-            borderBottomColor: "#444c97",
-            borderBottomWidth: 2,
+            borderBottomColor: "#d4d4d2",
+            borderBottomWidth: 1,
             width: "55%",
             marginBottom: 10,
             justifyContent: "space-around",
@@ -97,9 +101,8 @@ export default class CalculatorScreen extends Component {
                 this.onClear();
               }}
               title="C"
-              color="#abafd1"
-              backgroundColor=""
-              style={{ borderWidth: 1, borderColor: "#f8db32" }}
+              color="#d4d4d2"
+              backgroundColor="#505050"
             />
             <CalcButton title="" color="" backgroundColor="" />
             <CalcButton
@@ -107,16 +110,16 @@ export default class CalculatorScreen extends Component {
                 this.onBinaryOperator(this.oc.DivisionOperator);
               }}
               title="÷"
-              color="#2e388c"
-              backgroundColor="#f8db32"
+              color="#d4d4d2"
+              backgroundColor="#f09a36"
             />
             <CalcButton
               onPress={() => {
                 this.onBinaryOperator(this.oc.MultiplicationOperator);
               }}
               title="×"
-              color="#2e388c"
-              backgroundColor="#f8db32"
+              color="#d4d4d2"
+              backgroundColor="#f09a36"
             />
           </View>
           <View style={styles.buttonRow}>
@@ -125,35 +128,32 @@ export default class CalculatorScreen extends Component {
                 this.onDigitPress("7");
               }}
               title="7"
-              color="#abafd1"
-              backgroundColor=""
-              style={{ borderWidth: 1, borderColor: "#abafd1" }}
+              color="#d4d4d2"
+              backgroundColor="#505050"
             />
             <CalcButton
               onPress={() => {
                 this.onDigitPress("8");
               }}
               title="8"
-              color="#abafd1"
-              backgroundColor=""
-              style={{ borderWidth: 1, borderColor: "#abafd1" }}
+              color="#d4d4d2"
+              backgroundColor="#505050"
             />
             <CalcButton
               onPress={() => {
                 this.onDigitPress("9");
               }}
               title="9"
-              color="#abafd1"
-              backgroundColor=""
-              style={{ borderWidth: 1, borderColor: "#abafd1" }}
+              color="#d4d4d2"
+              backgroundColor="#505050"
             />
             <CalcButton
               onPress={() => {
                 this.onBinaryOperator(this.oc.SubtractionOperator);
               }}
               title="-"
-              color="#2e388c"
-              backgroundColor="#f8db32"
+              color="#d4d4d2"
+              backgroundColor="#f09a36"
             />
           </View>
           <View style={styles.buttonRow}>
@@ -162,35 +162,32 @@ export default class CalculatorScreen extends Component {
                 this.onDigitPress("4");
               }}
               title="4"
-              color="#abafd1"
-              backgroundColor=""
-              style={{ borderWidth: 1, borderColor: "#abafd1" }}
+              color="#d4d4d2"
+              backgroundColor="#505050"
             />
             <CalcButton
               onPress={() => {
                 this.onDigitPress("5");
               }}
               title="5"
-              color="#abafd1"
-              backgroundColor=""
-              style={{ borderWidth: 1, borderColor: "#abafd1" }}
+              color="#d4d4d2"
+              backgroundColor="#505050"
             />
             <CalcButton
               onPress={() => {
                 this.onDigitPress("6");
               }}
               title="6"
-              color="#abafd1"
-              backgroundColor=""
-              style={{ borderWidth: 1, borderColor: "#abafd1" }}
+              color="#d4d4d2"
+              backgroundColor="#505050"
             />
             <CalcButton
               onPress={() => {
                 this.onBinaryOperator(this.oc.AdditionOperator);
               }}
               title="+"
-              color="#2e388c"
-              backgroundColor="#f8db32"
+              color="#d4d4d2"
+              backgroundColor="#f09a36"
             />
           </View>
           <View>
@@ -200,27 +197,24 @@ export default class CalculatorScreen extends Component {
                   this.onDigitPress("1");
                 }}
                 title="1"
-                color="#abafd1"
-                backgroundColor=""
-                style={{ borderWidth: 1, borderColor: "#abafd1" }}
+                color="#d4d4d2"
+                backgroundColor="#505050"
               />
               <CalcButton
                 onPress={() => {
                   this.onDigitPress("2");
                 }}
                 title="2"
-                color="#abafd1"
-                backgroundColor=""
-                style={{ borderWidth: 1, borderColor: "#abafd1" }}
+                color="#d4d4d2"
+                backgroundColor="#505050"
               />
               <CalcButton
                 onPress={() => {
                   this.onDigitPress("3");
                 }}
                 title="3"
-                color="#abafd1"
-                backgroundColor=""
-                style={{ borderWidth: 1, borderColor: "#abafd1" }}
+                color="#d4d4d2"
+                backgroundColor="#505050"
               />
               <View>
                 <CalcButton
@@ -228,8 +222,8 @@ export default class CalculatorScreen extends Component {
                     this.onEqual();
                   }}
                   title="="
-                  color="#2e388c"
-                  backgroundColor="#f8db32"
+                  color="#d4d4d2"
+                  backgroundColor="#f09a36"
                   style={{ flex: 2, flexDirection: "column" }}
                 />
               </View>
@@ -240,12 +234,10 @@ export default class CalculatorScreen extends Component {
                   this.onDigitPress("0");
                 }}
                 title="0"
-                color="#abafd1"
-                backgroundColor=""
+                color="#d4d4d2"
+                backgroundColor="#505050"
                 style={{
                   flex: 2,
-                  borderWidth: 1,
-                  borderColor: "#abafd1",
                 }}
               />
               <CalcButton
@@ -253,12 +245,8 @@ export default class CalculatorScreen extends Component {
                   this.onDigitPress(".");
                 }}
                 title="."
-                color="#abafd1"
-                backgroundColor=""
-                style={{
-                  borderWidth: 1,
-                  borderColor: "#abafd1",
-                }}
+                color="#d4d4d2"
+                backgroundColor="#505050"
               />
             </View>
           </View>
@@ -288,15 +276,23 @@ export default class CalculatorScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#2f388c",
+    backgroundColor: "#202020",
     justifyContent: "center",
     alignItems: "center",
   },
-  displayContainer: { flex: 1, justifyContent: "flex-end" },
+  displayContainer: {
+    flex: 1,
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+  },
   buttonContainer: {
     justifyContent: "center",
     alignItems: "center",
     paddingBottom: 20,
   },
-  buttonRow: { flexDirection: "row", justifyContent: "space-around" },
+  buttonRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+  },
 });
