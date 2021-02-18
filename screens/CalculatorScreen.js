@@ -88,10 +88,8 @@ export default class CalculatorScreen extends Component {
         <View
           style={{
             borderBottomColor: "#d4d4d2",
-            borderBottomWidth: 1,
-            width: "55%",
+            borderBottomWidth: 0.25,
             marginBottom: 10,
-            justifyContent: "space-around",
           }}
         />
         <View style={styles.buttonContainer}>
@@ -275,13 +273,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#202020",
-    justifyContent: "center",
-    alignItems: "center",
   },
   displayContainer: {
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "flex-end",
+    backgroundColor: "#333",
   },
   buttonContainer: {
     justifyContent: "center",
