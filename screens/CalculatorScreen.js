@@ -17,6 +17,7 @@ export default class CalculatorScreen extends Component {
       display: "0",
       orientation: "portrait",
     };
+
     // Initialize calculator
     this.oc = global.swisscalc.lib.operatorCache;
     this.calc = new global.swisscalc.calc.calculator();
